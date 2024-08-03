@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
+    margin: auto 30px;
+    font-family: "Inter", sans-serif;
+    letter-spacing: .6px;
+    background-color: #fff;
+    color: #506279;
+    background-image: url(assets/lotus-position.svg) , url(assets/waves-mobile.webp);
+    background-repeat: no-repeat;
+    background-position: center bottom 40px , center bottom;
+    background-size: 100vw 50vh , 100vw 50vh;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px auto;
+}
+
+.desktop-nav ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    list-style: none;
+}
+
+.desktop-nav li {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.desktop-nav a {
+    text-decoration: none;
+    color: #506279;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.main-content {
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 2.8rem;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.main-buttons {
+    margin-top: 50px;
+}
+
+button {
+    padding: 15px 50px;
+    border: none;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+button + button {
+    margin-left: 4px;
+}
+
+.btn-1 {
+    margin-bottom: 10px;
+    background-color: #F88CAC;
+    color: #fff;
+}
+
+.btn-2 {
+    margin-bottom: 10px;
+    background-color: #E9F0FD;
+    color: #506279;
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 90%;
+        margin: auto auto;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobile-nav img {
+        width: 50px;
+    }
+
+    .main-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: .9rem;
+    }
+
+    button + button {
+        margin-left: -2px;
+    }
+    
+}
+
+@media (min-width: 970px) {
+    body {
+        background-image: url(assets/lotus-position.svg) , url(assets/waves-desktop.webp);
+        background-repeat: no-repeat;
+        background-position: left 4% top 50% , center left -60px;
+        background-size: 45% , 110% 100vh;
+    }
+    .main-section {
+        width: 40%;
+        margin-left: auto;
+        margin-top: 150px;
+    }
+
+    .main-content {
+        text-align: left;
+    }
+    
+}
